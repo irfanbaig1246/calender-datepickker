@@ -1,0 +1,114 @@
+body{
+   margin:0;
+   font-family: 'Times New Roman', Times, serif;
+   
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color:#a4adaf;
+}
+
+.calendar{
+    margin:auto;
+width:600px;
+background-color:#fff;
+}
+.month{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  text-align:center;
+  align-items: center;
+  background-color: #00e3eb;
+  color:white;
+  padding: 20px 30px;
+}
+.weekends{
+  display: flex;
+  background-color: #0dbfc5;
+  color:white;
+  padding:7px 0px;
+}
+.weekends div{
+  width: 14.28%;
+  text-align: center;
+}
+.days{
+  display: flex;
+ flex-wrap: wrap;
+ padding:10px 0px;
+ text-align: center;
+ font-weight: 200;
+}
+.days div{
+  width: 14.28%;
+  margin-bottom: 10px;
+  padding:10px 0;
+  transition: all 0.4s;
+}
+.days div:hover{
+  background:#01eadc;
+  cursor: pointer;
+}
+.today{
+  background-color: #02a2a8;
+  color:#fff;
+}
+.prev_date , .next_Date{
+  color:#a1a2a2;
+}
+.prev , .next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+#month{
+  font-size: 30px;
+}
+.prev:hover ,
+.next:hover {
+  background-color:rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px ){
+  body{
+  text-align: center;
+  }
+  .calendar{
+    width: 90%;
+    font-size:15px;
+  }
+}
+@media only screen and (min-width: 400px ){
+  body{
+  text-align: center;
+  }
+  .calendar{
+    width: 90%;
+
+    font-size:25px;
+  }
+}
+@media only screen and (min-width: 1020px ){
+  body{
+  text-align: center;
+  }
+  .calendar{
+    width: 90%;
+
+    font-size:40px;
+  }
+}
